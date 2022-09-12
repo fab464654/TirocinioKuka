@@ -7,7 +7,7 @@ _Initial project objectives:_
 - Plan the Kuka Robot motion accordingly to insert screws into the threaded holes.
 
 In the following, a brief explanation of the (last) developed code:_
-STEP 1) Read the camera frame, find the area of interest (base with holes)
+1) Read the camera frame, find the area of interest (base with holes)
 STEP 2) Detect the holes inside the area of interest
 STEP 3) Filter the detected holes:
 STEP 4) Make a graph from the pixels' coordinates and find the best path for the robot to follow (optional)
