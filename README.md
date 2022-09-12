@@ -17,7 +17,7 @@ _In the following, a brief explanation of the (last) developed code (markerless 
 
 3) Detect the holes inside the area of interest using OpenCV Blob Detection (https://learnopencv.com/blob-detection-using-opencv-python-c/)
 <p align="center">
-  <img src="img/4_filt.png" width="300"/>
+  <img src="img/4_filt.png" width="500"/>
 </p>
 4) Filter the detected holes considering the ones inside the area of interest (and keep only unique holes among multiple frames for increased robustness)
 5) Make a graph from the pixels' centers coordinates and find the best path for the robot to follow (optional: only 2 threaded holes should be detected on the gadget)
