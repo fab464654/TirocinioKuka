@@ -16,11 +16,20 @@ _In the following, a brief explanation of the (last) developed code (markerless 
 </p>
 
 3) Detect the holes inside the area of interest using OpenCV Blob Detection (https://learnopencv.com/blob-detection-using-opencv-python-c/)
+4) Filter the detected holes considering the ones inside the area of interest (and keep only unique holes among multiple frames for increased robustness)
 <p align="center">
   <img src="img/4_notFilt.png" width="500"/>
   <img src="img/4_filt.png" width="500"/>
 </p>
-4) Filter the detected holes considering the ones inside the area of interest (and keep only unique holes among multiple frames for increased robustness)
+
 5) Make a graph from the pixels' centers coordinates and find the best path for the robot to follow (optional: only 2 threaded holes should be detected on the gadget)
+<p align="center">
+  <img src="img/5_path.png" width="500"/>
+</p>
+
 6) Try to map 2D pixel coordinates into 3D points using camera parameters matrices
+<p align="center">
+  <img src="img/6_cm.png" width="500"/>
+</p>
+
 7) TO DO/CHECK (it's only pseudocode) if reliable: Control the robot in order to reach the center of the "k-th" hole; try to use the above 2D->3D projections; probably a second alignment process is required afterwards
