@@ -8,9 +8,9 @@ _Initial project objectives:_
 
 In the following, a brief explanation of the (last) developed code:_
 1) Read the camera frame, find the area of interest (base with holes)
-STEP 2) Detect the holes inside the area of interest
-STEP 3) Filter the detected holes:
-STEP 4) Make a graph from the pixels' coordinates and find the best path for the robot to follow (optional)
-STEP 5) Try to map 2D pixel coordinates into 3D points using camera parameters matrices
-STEP 6) TO DO-CHECK if reliable: Control the robot in order to reach the center first hole
+2) Detect the holes inside the area of interest
+3) Filter the detected holes:
+4) Make a graph from the pixels' coordinates and find the best path for the robot to follow (optional)
+5) Try to map 2D pixel coordinates into 3D points using camera parameters matrices
+6) TO DO-CHECK if reliable: Control the robot in order to reach the center first hole
         Maybe try to use the above 2D->3D projections, if correct; probably a second alignment process is required afterwards
